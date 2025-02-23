@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Portfólio</title>
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#aboult">Aboult</a></li>
-            <li><a href="#skills">Skills</a></li>
+    <nav class="navegacao">
+        <ul class="menu">
+            <li><a href="/" class="menu-link">Home
+            </a></li>
+            <li><a href="#projects"class="menu-link">Projects</a></li>
+            <li><a href="#aboult"class="menu-link">Aboult</a></li>
+            <li><a href="#skills"class="menu-link">Skills</a></li>
+            <li><a href="#contact"class="menu-link">Contact</a></li>
         </ul>
     </nav>
     <main id="inicio" class="cabecalho">
         <div>
-            <img src="imagens/perfil1.png" alt="perfil">
+            <img src="imagens/perfil1.png" alt="perfil" class="foto-perfil">
             <h1>Hi, i am Anderson</h1>
             <p>Desenvolvedor Full Stack</p>
         </div>
@@ -26,11 +31,42 @@
         <h2 class="sobre-titulo">Sobre mim</h2>
         <div class="sobre-caixa">
             <p class="sobre-paragrafo">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, tempora nulla sapiente repellat debitis doloribus animi, unde voluptate optio, pariatur laborum voluptatem assumenda dolore commodi. Porro quis voluptates eum dolorem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, tempora nulla sapiente repellat
+                debitis doloribus animi, unde voluptate optio, pariatur laborum voluptatem assumenda dolore commodi.
+                Porro quis voluptates eum dolorem.
             </p>
 
         </div>
-        
+
+    </section>
+    <section id="skills" class="skills">
+        <h2 class="skills-titulo">Skills</h2>
+        <div class="skills-caixa">
+            <div class="skills-card">
+                <img src="imagens/html.png" alt="html">
+                <h3>HTML</h3>
+            </div>
+            <div class="skills-card">
+                <img src="imagens/css.png" alt="css">
+                <h3>CSS</h3>
+            </div>
+            <div class="skills-card">
+                <img src="imagens/js.png" alt="js">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skills-card">
+                <img src="imagens/node.png" alt="node">
+                <h3>Node</h3>
+            </div>
+            <div class="skills-card">
+                <img src="imagens/react.png" alt="react">
+                <h3>React</h3>
+            </div>
+            <div class="skills-card">
+                <img src="imagens/git.png" alt="git">
+                <h3>Git</h3>
+            </div>
+        </div>
     </section>
 
     <section id="projects" class="projects">
@@ -42,9 +78,39 @@
                 <p>loja virtual</p>
 
             </div>
+            <div class="projetos-card">
+                <img src="" alt="projeto2">
+                <h3>lojas</h3>
+                <p>loja virtual</p>
+
+            </div>
+            <div class="projetos-card">
+                <img src="" alt="projeto3">
+                <h3>lojas</h3>
+                <p>loja virtual</p>
+
+            </div>
         </div>
 
     </section>
-    
+
+    <section id="contact" class="contatos">
+        <h2 class="contatos-titulo">Contatos</h2>
+        <form class="formulario-conato" id="formulario">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form">
+            </div>
+            <div class="grupo-form">
+                <textarea class="text-form" placeholder="Digite sua Mensagem">
+                </textarea>
+
+            </div>
+
+        </form>
+
+    </section>
+
 </body>
+<script src="script.js"></script>
+
 </html>
